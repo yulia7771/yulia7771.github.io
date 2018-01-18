@@ -1,0 +1,124 @@
+body {
+  background: url("imgs/body_bg.png");
+  margin: 0;
+  height: 100%; }
+
+@font-face {
+  font-family: Exo;
+  src: url("fonts/Exo2.0-Thin.otf"); }
+
+.feeds {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  min-height: 100%;
+  min-width: 100%; }
+  .feeds .title {
+    flex: 0 0 100%;
+    font-size: 36px;
+    text-align: center;
+    color: #ffffff;
+    font-family: Exo, sans-serif; }
+  .feeds .feed {
+    flex: 0 0 320px;
+    vertical-align: bottom;
+    display: inline-block;
+    margin: 25px 40px 0; }
+    .feeds .feed .comment {
+      font-family: "Trebuchet MS", sans-serif;
+      text-align: center; }
+      .feeds .feed .comment .selected, .feeds .feed .comment .disabled {
+        display: none; }
+    .feeds .feed:hover .feed-content {
+      background: url("imgs/feeds_pic-hover.png"); }
+      .feeds .feed:hover .feed-content .weight {
+        background: #2ea8e6; }
+    .feeds .feed.selected .comment {
+      color: #ffffff; }
+      .feeds .feed.selected .comment .normal {
+        display: none; }
+      .feeds .feed.selected .comment .selected {
+        display: block; }
+    .feeds .feed.selected .feed-content {
+      background: url("imgs/feeds_pic-selected.png"); }
+      .feeds .feed.selected .feed-content .weight {
+        background: #d91667; }
+    .feeds .feed.selected:hover .feed-content {
+      background: url("imgs/feeds_pic-selected-hover.png"); }
+      .feeds .feed.selected:hover .feed-content .weight {
+        background: #e62e7a; }
+    .feeds .feed.disabled .comment {
+      color: #ffff66; }
+      .feeds .feed.disabled .comment .normal, .feeds .feed.disabled .comment .selected {
+        display: none; }
+      .feeds .feed.disabled .comment .disabled {
+        display: block; }
+    .feeds .feed.disabled .feed-content {
+      background: url("imgs/feeds_pic-disabled.png"); }
+      .feeds .feed.disabled .feed-content > .text {
+        color: #b3b3b3; }
+        .feeds .feed.disabled .feed-content > .text .inner, .feeds .feed.disabled .feed-content > .text .item-title, .feeds .feed.disabled .feed-content > .text .description, .feeds .feed.disabled .feed-content > .text .quantity, .feeds .feed.disabled .feed-content > .text .quantity .num, .feeds .feed.disabled .feed-content > .text .details {
+          color: #b3b3b3; }
+        .feeds .feed.disabled .feed-content > .text .weight {
+          background: #b3b3b3; }
+    .feeds .feed .comment {
+      color: #ffffff;
+      font-size: 13px;
+      margin-top: 15px; }
+      .feeds .feed .comment a {
+        color: #1698d9;
+        text-decoration: none;
+        border-bottom: 1px dashed #1698d9; }
+  .feeds .feed-content {
+    width: 320px;
+    height: 480px;
+    background: url("imgs/feeds_pic.png");
+    position: relative; }
+    .feeds .feed-content > .text {
+      font-family: "Trebuchet MS", sans-serif;
+      text-align: left;
+      margin-left: 50px; }
+      .feeds .feed-content > .text .inner {
+        font-size: 16px;
+        color: #666666;
+        padding-top: 24px; }
+      .feeds .feed-content > .text .item-title {
+        font-size: 48px;
+        color: #000000;
+        font-weight: bold;
+        margin-top: 5px; }
+      .feeds .feed-content > .text .description {
+        font-size: 24px;
+        color: #000000;
+        font-weight: bold; }
+      .feeds .feed-content > .text .quantity {
+        font-size: 14px;
+        color: #666666;
+        margin-top: 15px; }
+        .feeds .feed-content > .text .quantity .num {
+          display: inline;
+          font-weight: bold;
+          color: #666666; }
+      .feeds .feed-content > .text .details {
+        font-size: 14px;
+        color: #666666; }
+    .feeds .feed-content .weight {
+      width: 80px;
+      height: 80px;
+      background: #1698d9;
+      text-align: center;
+      border-radius: 40px;
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      color: #ffffff; }
+      .feeds .feed-content .weight .num {
+        font-size: 42px;
+        padding-top: 12px; }
+      .feeds .feed-content .weight .text {
+        font-size: 21px;
+        margin-top: -5px; }
+
+html {
+  height: 100%; }
