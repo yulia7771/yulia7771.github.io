@@ -1,0 +1,248 @@
+@font-face {
+  font-family: "hk-grotesk-light";
+  src: url("fonts/hk-grotesk-light.otf"); }
+
+body {
+  margin: 0;
+  background: #272f45;
+  line-height: 1.25;
+  font-family: "hk-grotesk-light", sans-serif; }
+
+.header {
+  width: 1160px;
+  height: 125px;
+  margin: 0 auto;
+  padding-top: 63px; }
+  .header .logo {
+    background: url("imgs/header_logo.png") no-repeat;
+    height: 72px;
+    width: 294px; }
+  .header .search {
+    font-size: 24px;
+    line-height: 24px;
+    float: right;
+    border: none;
+    border-bottom: 3px solid #63757e;
+    width: 144px;
+    background: url("imgs/header_loupe.png") no-repeat 1px 3px;
+    padding: 0 0 5px 32px;
+    color: #92a1a9;
+    margin-top: 17px;
+    outline: none; }
+    .header .search::placeholder {
+      color: #92a1a9; }
+
+.btn-link {
+  height: 35px;
+  line-height: 35px;
+  padding: 0 20px;
+  display: inline-block;
+  text-decoration: none;
+  border: 3px solid #e5c8a2;
+  color: #ffffff;
+  font-size: 18px; }
+  .btn-link.big {
+    font-size: 24px;
+    height: 54px;
+    line-height: 54px;
+    padding: 0 24px; }
+
+@font-face {
+  font-family: "league-spartan";
+  src: url("fonts/league-spartan.ttf"); }
+
+.main {
+  background: url("imgs/main_bg.png") no-repeat;
+  width: 1160px;
+  height: 690px;
+  margin: 0 auto;
+  position: relative; }
+  .main .content {
+    width: 364px;
+    padding-top: 106px;
+    padding-left: 59px; }
+    .main .content .title {
+      font-family: "league-spartan", sans-serif;
+      font-weight: bold;
+      color: #ffffff;
+      font-size: 80px;
+      text-transform: uppercase; }
+    .main .content .description {
+      color: #ffffff;
+      font-size: 32px;
+      margin-top: 16px; }
+    .main .content .btn-link {
+      margin-top: 134px; }
+  .main a.kickstarter {
+    background: url("imgs/main_kickstarter.png") no-repeat;
+    width: 112px;
+    height: 115px;
+    position: absolute;
+    top: 37px;
+    right: 37px; }
+
+.btn-link {
+  height: 35px;
+  line-height: 35px;
+  padding: 0 20px;
+  display: inline-block;
+  text-decoration: none;
+  border: 3px solid #e5c8a2;
+  color: #ffffff;
+  font-size: 18px; }
+  .btn-link.big {
+    font-size: 24px;
+    height: 54px;
+    line-height: 54px;
+    padding: 0 24px; }
+
+@font-face {
+  font-family: "league-spartan";
+  src: url("fonts/league-spartan.ttf"); }
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: 40px;
+  color: #ffffff; }
+  .products .title {
+    font-family: "league-spartan", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .products .btn-link {
+    text-transform: uppercase;
+    margin-top: 27px; }
+  .products .product-big {
+    padding: 30px;
+    box-sizing: border-box;
+    flex: 0 0 560px;
+    height: 520px;
+    color: #ffffff; }
+    .products .product-big .title {
+      font-size: 48px;
+      padding-top: 32px; }
+    .products .product-big .description {
+      font-size: 24px;
+      margin-top: 6px; }
+  .products .product-small {
+    margin-top: 40px;
+    flex: 0 0 360px;
+    height: 440px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 40px;
+    position: relative; }
+    .products .product-small .title {
+      margin-top: 12px;
+      font-size: 32px; }
+    .products .product-small .description {
+      font-size: 16px; }
+  .products .product1 {
+    background: url("imgs/products_product1.png") no-repeat;
+    text-align: right; }
+    .products .product1 .description {
+      padding-left: 50px; }
+  .products .product2 {
+    background: url("imgs/products_product2.png") no-repeat;
+    text-align: left; }
+    .products .product2 .description {
+      width: 342px; }
+  .products .product3 {
+    background: url("imgs/products_product3.png") no-repeat; }
+  .products .product4 {
+    background: url("imgs/products_product4.png") no-repeat; }
+    .products .product4 .content {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      right: 40px; }
+  .products .product5 {
+    background: url("imgs/products_product5.png") no-repeat; }
+
+@font-face {
+  font-family: "league-spartan";
+  src: url("fonts/league-spartan.ttf"); }
+
+.newsletter {
+  width: 810px;
+  margin: 150px auto 0;
+  text-align: center; }
+  .newsletter .title {
+    color: #92a1a9;
+    font-size: 36px; }
+  .newsletter .description {
+    color: #7f919b;
+    font-size: 18px;
+    margin-top: 14px;
+    padding-left: 1px; }
+  .newsletter form {
+    width: 360px;
+    margin: 49px auto 0; }
+    .newsletter form input {
+      box-sizing: border-box;
+      display: inline-block;
+      text-align: center;
+      width: 360px;
+      font-size: 24px;
+      line-height: 24px;
+      background: transparent;
+      border: 3px solid #63757e;
+      padding: 12px 5px;
+      outline: none;
+      color: #92a1a9; }
+      .newsletter form input::placeholder {
+        color: #92a1a9; }
+    .newsletter form button {
+      display: inline-block;
+      color: #ffffff;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-family: "league-spartan", sans-serif;
+      border: 3px solid #82c9d8;
+      text-align: center;
+      width: 360px;
+      font-size: 18px;
+      line-height: 24px;
+      background: transparent;
+      padding: 12px 5px;
+      margin-top: 20px;
+      letter-spacing: 2px; }
+
+@font-face {
+  font-family: "hk-grotesk-light";
+  src: url("fonts/hk-grotesk-light.otf"); }
+
+.footer {
+  margin: 98px 0 70px;
+  text-align: center;
+  color: #92a1a9; }
+  .footer .links {
+    word-spacing: 11px; }
+  .footer a {
+    color: #92a1a9;
+    font-size: 24px;
+    font-family: "hk-grotesk-light", sans-serif;
+    text-decoration: none; }
+  .footer .copyright {
+    color: #7f919b;
+    font-size: 18px;
+    font-family: "hk-grotesk-light", sans-serif;
+    margin-top: 22px; }
+
+.btn-link {
+  height: 35px;
+  line-height: 35px;
+  padding: 0 20px;
+  display: inline-block;
+  text-decoration: none;
+  border: 3px solid #e5c8a2;
+  color: #ffffff;
+  font-size: 18px; }
+  .btn-link.big {
+    font-size: 24px;
+    height: 54px;
+    line-height: 54px;
+    padding: 0 24px; }
